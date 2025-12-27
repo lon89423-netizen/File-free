@@ -1,0 +1,50 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+body{background:#070d1a;color:#fff}
+.app{max-width:420px;margin:auto;min-height:100vh}
+
+.header{background:#0c1633;padding:15px;display:flex;align-items:center;border-bottom:1px solid #1e2b55}
+.menu{font-size:24px;cursor:pointer;display:none}
+.title{flex:1;text-align:center;font-weight:bold}
+
+.sidebar{
+    position:fixed;top:0;left:-220px;width:220px;height:100%;
+    background:#0c1633;padding:20px;transition:.3s;
+    border-right:2px solid #1e90ff;z-index:999
+}
+.sidebar.show{left:0}
+.sidebar a{
+    display:block;padding:12px;color:#fff;
+    text-decoration:none;border-bottom:1px solid #1e2b55;cursor:pointer
+}
+
+.card{
+    background:#0c1633;margin:15px;padding:22px;
+    border-radius:6px;border:2px solid #1e90ff;
+    box-shadow:0 0 20px rgba(30,144,255,.25)
+}
+input,button{width:100%;padding:12px;margin-top:10px;border:none;border-radius:6px}
+input{background:#09112a;color:#fff;border:1px solid #1e2b55}
+button{background:#00c853;color:#fff;font-weight:bold}
+.link{text-align:center;margin-top:10px;color:#4fc3f7;cursor:pointer}
+.hidden{display:none}
+
+.product{
+    background:#09112a;padding:15px;border-radius:6px;
+    border:1px solid #1e2b55;margin-bottom:15px
+}
+
+.history-item{padding:12px 0;border-bottom:1px solid #1e2b55}
+.actions{display:flex;gap:10px;margin-top:6px}
+.eye,.copy{
+    width:36px;height:36px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;text-decoration:none;cursor:pointer
+}
+.eye{background:#1e88e5}
+.copy{background:#43a047}
+
+.toast{
+    position:fixed;top:20px;right:20px;
+    background:#1e88e5;color:#fff;
+    padding:15px;border-radius:6px;z-index:999
+}

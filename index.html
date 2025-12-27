@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LCSHOPFREE IOS VÀ ADR</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar" id="sidebar">
+    <a onclick="showHome()">🏠 Trang chủ</a>
+    <a onclick="showHistory()">🧾 Lịch sử</a>
+    <a href="https://zalo.me/0776307956" target="_blank">💬 ZALO</a>
+    <a onclick="logout()">🚪 Đăng xuất</a>
+</div>
+
+<div class="app">
+    <div class="header">
+        <div class="menu" id="menuBtn">☰</div>
+        <div class="title">LCSHOPFREE</div>
+    </div>
+
+    <div id="login" class="card hidden">
+        <h3>Đăng nhập</h3>
+        <input id="loginUser" placeholder="Tài khoản">
+        <input id="loginPass" type="password" placeholder="Mật khẩu">
+        <button onclick="login()">Đăng nhập</button>
+        <div class="link" onclick="showRegister()">Đăng ký</div>
+    </div>
+
+    <div id="register" class="card hidden">
+        <h3>Đăng ký</h3>
+        <input id="regUser" placeholder="Tài khoản">
+        <input id="regPass" type="password" placeholder="Mật khẩu">
+        <input id="regPass2" type="password" placeholder="Xác nhận mật khẩu">
+        <button onclick="registerOnce()">Tạo tài khoản</button>
+    </div>
+
+    <div id="home" class="hidden">
+        <div class="card product">
+            <h3>IPA FREEFIRE</h3>
+            <b>0đ</b>
+            <button onclick="buy('IPA FREEFIRE','0đ')">Mua</button>
+        </div>
+        <div class="card product">
+            <h3>FILE CONFIHIOS</h3>
+            <b>0đ</b>
+            <button onclick="buy('FILE CONFIHIOS','0đ')">Mua</button>
+        </div>
+        <div class="card product">
+            <h3>FILE ADR</h3>
+            <b>0đ</b>
+            <button onclick="buy('FILE ADR','0đ')">Mua</button>
+        </div>
+    </div>
+
+    <div id="history" class="hidden">
+        <div class="card">
+            <h3>Lịch sử mua</h3>
+            <div id="historyList"></div>
+        </div>
+    </div>
+</div>
+
+<div id="toast" class="toast hidden"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
