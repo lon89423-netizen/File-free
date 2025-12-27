@@ -7,7 +7,7 @@ menuBtn.onclick = () => sidebar.classList.toggle("show")
 const PRODUCT_LINKS = {
     "IPA FREEFIRE": "https://chaptodocquyen.appinstall.cloud/FIREFREE.ipa",
     "FILE CONFIHIOS": "https://zufile.com/download/zfXmue0pbb",
-    "FILE ADR": "https://zufile.com/download/DPQgBvvwJX"
+    "FILE ADR": "https://zufile.com/download/Nc5AAWuul1"
 }
 
 function toast(msg){
